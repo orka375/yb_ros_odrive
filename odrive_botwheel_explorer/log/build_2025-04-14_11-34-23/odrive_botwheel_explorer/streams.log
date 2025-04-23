@@ -1,0 +1,46 @@
+[0.008s] Invoking command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nbf2/ros_odrive/odrive_botwheel_explorer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer
+[0.125s] -- The C compiler identification is GNU 13.3.0
+[0.207s] -- The CXX compiler identification is GNU 13.3.0
+[0.225s] -- Detecting C compiler ABI info
+[0.321s] -- Detecting C compiler ABI info - done
+[0.333s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.334s] -- Detecting C compile features
+[0.334s] -- Detecting C compile features - done
+[0.345s] -- Detecting CXX compiler ABI info
+[0.439s] -- Detecting CXX compiler ABI info - done
+[0.449s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.449s] -- Detecting CXX compile features
+[0.449s] -- Detecting CXX compile features - done
+[0.453s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.584s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.642s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.740s] -- Configuring done (0.7s)
+[0.742s] -- Generating done (0.0s)
+[0.744s] -- Build files have been written to: /home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer
+[0.748s] Invoked command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nbf2/ros_odrive/odrive_botwheel_explorer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer
+[0.749s] Invoking command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer -- -j12 -l12
+[0.788s] Invoked command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer -- -j12 -l12
+[0.802s] Invoking command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer
+[0.814s] -- Install configuration: ""
+[0.814s] -- Execute custom install script
+[0.815s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.ros2_control.xacro
+[0.827s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.urdf.xacro
+[0.838s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot_description.urdf.xacro
+[0.849s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/config/diffbot_controllers.yaml
+[0.861s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/launch/botwheel_explorer.launch.py
+[0.870s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/ament_index/resource_index/package_run_dependencies/odrive_botwheel_explorer
+[0.881s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/ament_index/resource_index/parent_prefix_path/odrive_botwheel_explorer
+[0.892s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.sh
+[0.903s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.dsv
+[0.915s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.sh
+[0.926s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.dsv
+[0.939s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.bash
+[0.949s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.sh
+[0.960s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.zsh
+[0.971s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.dsv
+[0.982s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.dsv
+[0.994s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/ament_index/resource_index/packages/odrive_botwheel_explorer
+[1.004s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig.cmake
+[1.016s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig-version.cmake
+[1.027s] -- Symlinking: /home/nbf2/ros_odrive/odrive_botwheel_explorer/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.xml
+[1.040s] Invoked command in '/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer

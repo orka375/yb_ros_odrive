@@ -1,0 +1,1 @@
+/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer/ament_cmake_environment_hooks/local_setup.sh

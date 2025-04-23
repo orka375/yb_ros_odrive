@@ -1,0 +1,108 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o[0m
+In file included from [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:3[m[K:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:117:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  117 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:120:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  120 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:872:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  872 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:875:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  875 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn odrive_ros2_control::ODriveHardwareInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:131:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_interfaces_[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_state_interfaces_[m[K’?
+  131 |     [01;31m[Kjoint_interfaces_[m[K.reserve(num_joints);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kjoint_state_interfaces_[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:132:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kactuator_interfaces_[m[K’ was not declared in this scope
+  132 |     [01;31m[Kactuator_interfaces_[m[K.reserve(num_actuators);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:135:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransmission_interface[m[K’ has not been declared
+  135 |     auto transmission_loader = [01;31m[Ktransmission_interface[m[K::SimpleTransmissionLoader();
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:148:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransmission_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Ktransmission_info[m[K’?
+  148 |     std::shared_ptr<[01;31m[Ktransmission_interface[m[K::Transmission> transmission;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[Ktransmission_info[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:148:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  148 |     std::shared_ptr<transmission_interface::Transmission[01;31m[K>[m[K transmission;
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:153:18:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktransmission_interface[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  153 |     catch (const [01;31m[Ktransmission_interface[m[K::TransmissionInterfaceException & exc)
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:153:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  153 |     catch [34m[K([m[Kconst transmission_interface[01;31m[K:[m[K[32m[K:[m[KTransmissionInterfaceException & exc)
+      |           [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                        [32m[K)[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:153:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K::[m[K’ token
+  153 |     catch (const transmission_interface[01;31m[K::[m[KTransmissionInterfaceException & exc)
+      |                                        [01;31m[K^~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:153:42:[m[K [01;31m[Kerror: [m[K‘[01m[K::TransmissionInterfaceException[m[K’ has not been declared
+  153 |     catch (const transmission_interface::[01;31m[KTransmissionInterfaceException[m[K & exc)
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:153:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kexc[m[K’ was not declared in this scope; did you mean ‘[01m[Kexp[m[K’?
+  153 |     catch (const transmission_interface::TransmissionInterfaceException & [01;31m[Kexc[m[K)
+      |                                                                           [01;31m[K^~~[m[K
+      |                                                                           [32m[Kexp[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:160:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  160 |     std::vector<transmission_interface::JointHandle[01;31m[K>[m[K joint_handles;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:176:59:[m[K [01;31m[Kerror: [m[K‘[01m[KInterfaceData[m[K’ was not declared in this scope
+  176 |         joint_interfaces_.insert(joint_interfaces_.end(), [01;31m[KInterfaceData[m[K(joint_info.name));
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:178:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransmission_interface[m[K’ is not a class, namespace, or enumeration
+  178 |         [01;31m[Ktransmission_interface[m[K::JointHandle joint_handle(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:181:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kjoint_handles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  181 |         joint_handles.[01;31m[Kpush_back[m[K(joint_handle);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:181:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_handle[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_handles[m[K’?
+  181 |         joint_handles.push_back([01;31m[Kjoint_handle[m[K);
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                                 [32m[Kjoint_handles[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:184:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  184 |     std::vector<transmission_interface::ActuatorHandle[01;31m[K>[m[K actuator_handles;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:190:65:[m[K [01;31m[Kerror: [m[K‘[01m[KInterfaceData[m[K’ was not declared in this scope
+  190 |         actuator_interfaces_.insert(actuator_interfaces_.end(), [01;31m[KInterfaceData[m[K(actuator_info.name));
+      |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:191:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransmission_interface[m[K’ is not a class, namespace, or enumeration
+  191 |         [01;31m[Ktransmission_interface[m[K::ActuatorHandle actuator_handle(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:194:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kactuator_handles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  194 |         actuator_handles.[01;31m[Kpush_back[m[K(actuator_handle);
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:194:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kactuator_handle[m[K’ was not declared in this scope; did you mean ‘[01m[Kactuator_handles[m[K’?
+  194 |         actuator_handles.push_back([01;31m[Kactuator_handle[m[K);
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                    [32m[Kactuator_handles[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:202:21:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  202 |         transmission[01;31m[K->[m[Kconfigure(joint_handles, actuator_handles);
+      |                     [01;31m[K^~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:204:18:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktransmission_interface[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  204 |     catch (const [01;31m[Ktransmission_interface[m[K::TransmissionInterfaceException & exc)
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:204:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  204 |     catch [34m[K([m[Kconst transmission_interface[01;31m[K:[m[K[32m[K:[m[KTransmissionInterfaceException & exc)
+      |           [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                        [32m[K)[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:204:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K::[m[K’ token
+  204 |     catch (const transmission_interface[01;31m[K::[m[KTransmissionInterfaceException & exc)
+      |                                        [01;31m[K^~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:204:42:[m[K [01;31m[Kerror: [m[K‘[01m[K::TransmissionInterfaceException[m[K’ has not been declared
+  204 |     catch (const transmission_interface::[01;31m[KTransmissionInterfaceException[m[K & exc)
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:211:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransmissions_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktransmission[m[K’?
+  211 |     [01;31m[Ktransmissions_[m[K.push_back(transmission);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Ktransmission[m[K
+gmake[2]: *** [CMakeFiles/odrive_ros2_control_plugin.dir/build.make:104: CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odrive_ros2_control_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

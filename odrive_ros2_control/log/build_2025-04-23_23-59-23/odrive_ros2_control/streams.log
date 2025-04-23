@@ -1,0 +1,61 @@
+[0.018s] Invoking command in '/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/home/nbf2/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nbf2/ros_odrive/odrive_ros2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nbf2/ros_odrive/odrive_ros2_control/install/odrive_ros2_control
+[0.037s] -- Found ament_cmake: 2.7.2 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.248s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.253s] -- Found rclcpp: 29.3.0 (/opt/ros/rolling/share/rclcpp/cmake)
+[0.273s] -- Found rosidl_generator_c: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[0.279s] -- Found rosidl_generator_cpp: 4.9.3 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[0.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.297s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.344s] -- Found rmw_implementation_cmake: 7.8.1 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[0.345s] -- Found rmw_fastrtps_cpp: 9.3.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[0.376s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.424s] -- Found pluginlib: 5.6.0 (/opt/ros/rolling/share/pluginlib/cmake)
+[0.430s] -- Found ament_cmake_auto: 2.7.2 (/opt/ros/rolling/share/ament_cmake_auto/cmake)
+[0.844s] -- Configuring done (0.8s)
+[0.858s] -- Generating done (0.0s)
+[0.862s] -- Build files have been written to: /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control
+[0.869s] Invoked command in '/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/home/nbf2/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nbf2/ros_odrive/odrive_ros2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nbf2/ros_odrive/odrive_ros2_control/install/odrive_ros2_control
+[0.870s] Invoking command in '/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/home/nbf2/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control -- -j12 -l12
+[0.942s] [ 25%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o[0m
+[0.943s] [ 50%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/nbf2/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o[0m
+[0.945s] [ 75%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/nbf2/ros_odrive/odrive_base/src/socket_can.cpp.o[0m
+[1.153s] In file included from [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:3[m[K:
+[1.153s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[1.153s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:117:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.153s]   117 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+[1.153s]       |                     [01;35m[K~~~~~~~~~^~~[m[K
+[1.153s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[1.153s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:120:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.154s]   120 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+[1.154s]       |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[1.154s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[1.154s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:872:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.154s]   872 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+[1.155s]       |                     [01;35m[K~~~~~~~~~^~~[m[K
+[1.155s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[1.155s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:875:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.155s]   875 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+[1.155s]       |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[3.006s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:[m[K At global scope:
+[3.006s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:107:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbacexport_command_interfaceskReturn[m[K’ has not been declared in ‘[01m[Khardware_interface[m[K’
+[3.006s]   107 | using hardware_interface::[01;31m[KCallbacexport_command_interfaceskReturn[m[K;
+[3.007s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.008s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:110:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[3.008s]   110 | [01;31m[KCallbackReturn[m[K ODriveHardwareInterface::on_init(const hardware_interface::HardwareInfo& info) {
+[3.008s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.010s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:224:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[3.010s]   224 | [01;31m[KCallbackReturn[m[K ODriveHardwareInterface::on_configure(const State&) {
+[3.010s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.012s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:237:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[3.012s]   237 | [01;31m[KCallbackReturn[m[K ODriveHardwareInterface::on_cleanup(const State&) {
+[3.012s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.013s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:242:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[3.013s]   242 | [01;31m[KCallbackReturn[m[K ODriveHardwareInterface::on_activate(const State&) {
+[3.013s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.015s] [01m[K/home/nbf2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:256:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[3.015s]   256 | [01;31m[KCallbackReturn[m[K ODriveHardwareInterface::on_deactivate(const State&) {
+[3.015s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.176s] gmake[2]: *** [CMakeFiles/odrive_ros2_control_plugin.dir/build.make:104: CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o] Error 1
+[4.177s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odrive_ros2_control_plugin.dir/all] Error 2
+[4.177s] gmake: *** [Makefile:146: all] Error 2
+[4.179s] Invoked command in '/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nbf2/youbot_ws/install/youbot:/home/nbf2/twist_stamper/install/twist_stamper:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control -- -j12 -l12

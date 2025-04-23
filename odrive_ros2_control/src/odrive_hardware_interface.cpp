@@ -8,6 +8,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "socket_can.hpp"
 
+
 namespace odrive_ros2_control {
 
 class Axis;
@@ -25,6 +26,8 @@ public:
 
     std::vector<hardware_interface::StateInterface> export_state_interfaces() override;
     std::vector<hardware_interface::CommandInterface> export_command_interfaces() override;
+
+
 
     return_type perform_command_mode_switch(
         const std::vector<std::string>& start_interfaces,
@@ -47,7 +50,7 @@ private:
 };
 
 struct Axis {
-    Axis(SocketCanIntf* can_intf, uint32_t node_id) : can_intf_(can_intf), node_id_(node_id) {}
+    Axis(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission) : can_intf_(can_intf), node_id_(node_id), transmission_(transmission) {}
 
     void on_can_msg(const rclcpp::Time& timestamp, const can_frame& frame);
 
@@ -61,6 +64,7 @@ struct Axis {
     double vel_setpoint_ = 0.0f; // [rad/s]
     double torque_setpoint_ = 0.0f; // [Nm]
 
+    double transmission_ = 0.0f;
     // State (ODrives => ros2_control)
     // rclcpp::Time encoder_estimates_timestamp_;
     // uint32_t axis_error_ = 0;
@@ -115,8 +119,12 @@ CallbackReturn ODriveHardwareInterface::on_init(const hardware_interface::Hardwa
     can_intf_name_ = info_.hardware_parameters["can"];
 
     for (auto& joint : info_.joints) {
-        axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")));
+        axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")));
+      
     }
+
+
+
 
     return CallbackReturn::SUCCESS;
 }
@@ -266,18 +274,18 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
         // Send the CAN message that fits the set of enabled setpoints
         if (axis.pos_input_enabled_) {
             Set_Input_Pos_msg_t msg;
-            msg.Input_Pos = axis.pos_setpoint_ / (2 * M_PI);
-            msg.Vel_FF = axis.vel_input_enabled_ ? (axis.vel_setpoint_ / (2 * M_PI)) : 0.0f;
-            msg.Torque_FF = axis.torque_input_enabled_ ? axis.torque_setpoint_ : 0.0f;
+            msg.Input_Pos = axis.pos_setpoint_ / (2 * M_PI) * axis.transmission_;
+            msg.Vel_FF = axis.vel_input_enabled_ ? (axis.vel_setpoint_ / (2 * M_PI) * axis.transmission_) : 0.0f;
+            msg.Torque_FF = axis.torque_input_enabled_ ? axis.torque_setpoint_ /  axis.transmission_ : 0.0f;
             axis.send(msg);
         } else if (axis.vel_input_enabled_) {
             Set_Input_Vel_msg_t msg;
-            msg.Input_Vel = axis.vel_setpoint_ / (2 * M_PI);
-            msg.Input_Torque_FF = axis.torque_input_enabled_ ? axis.torque_setpoint_ : 0.0f;
+            msg.Input_Vel = axis.vel_setpoint_ / (2 * M_PI) * axis.transmission_;
+            msg.Input_Torque_FF = axis.torque_input_enabled_ ? axis.torque_setpoint_ / axis.transmission_ : 0.0f;
             axis.send(msg);
         } else if (axis.torque_input_enabled_) {
             Set_Input_Torque_msg_t msg;
-            msg.Input_Torque = axis.torque_setpoint_;
+            msg.Input_Torque = axis.torque_setpoint_ / axis.transmission_;
             axis.send(msg);
         } else {
             // no control enabled - don't send any setpoint

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/nbf2/ros_odrive/odrive_ros2_control" FILES "/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/hardware_interface__pluginlib__plugin")
