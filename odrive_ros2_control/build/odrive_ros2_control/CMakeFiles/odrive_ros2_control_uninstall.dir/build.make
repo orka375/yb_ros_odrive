@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nbf2/ros_odrive/odrive_ros2_control
+CMAKE_SOURCE_DIR = /home/nbf2/yb_ros_odrive/odrive_ros2_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control
+CMAKE_BINARY_DIR = /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control
 
 # Utility rule file for odrive_ros2_control_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/odrive_ros2_control_uninstall.dir/compiler_depend.make
 include CMakeFiles/odrive_ros2_control_uninstall.dir/progress.make
 
 CMakeFiles/odrive_ros2_control_uninstall:
-	/usr/bin/cmake -P /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 odrive_ros2_control_uninstall: CMakeFiles/odrive_ros2_control_uninstall
 odrive_ros2_control_uninstall: CMakeFiles/odrive_ros2_control_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/odrive_ros2_control_uninstall.dir/clean:
 .PHONY : CMakeFiles/odrive_ros2_control_uninstall.dir/clean
 
 CMakeFiles/odrive_ros2_control_uninstall.dir/depend:
-	cd /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nbf2/ros_odrive/odrive_ros2_control /home/nbf2/ros_odrive/odrive_ros2_control /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control /home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/CMakeFiles/odrive_ros2_control_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nbf2/yb_ros_odrive/odrive_ros2_control /home/nbf2/yb_ros_odrive/odrive_ros2_control /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control /home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/CMakeFiles/odrive_ros2_control_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/odrive_ros2_control_uninstall.dir/depend
 

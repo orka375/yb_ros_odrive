@@ -1,8 +1,8 @@
-# Install script for directory: /home/nbf2/ros_odrive/odrive_ros2_control
+# Install script for directory: /home/nbf2/yb_ros_odrive/odrive_ros2_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nbf2/ros_odrive/odrive_ros2_control/install/odrive_ros2_control")
+  set(CMAKE_INSTALL_PREFIX "/home/nbf2/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

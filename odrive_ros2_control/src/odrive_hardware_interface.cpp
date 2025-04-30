@@ -50,15 +50,17 @@ private:
 };
 
 struct Axis {
-    Axis(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission) : can_intf_(can_intf), node_id_(node_id), transmission_(transmission) {}
+    Axis(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission, std::string name)
+    : can_intf_(can_intf), node_id_(node_id), transmission_(transmission), name_(std::move(name)) {}
 
+  
     void on_can_msg(const rclcpp::Time& timestamp, const can_frame& frame);
 
     void on_can_msg();
 
     SocketCanIntf* can_intf_;
     uint32_t node_id_;
-
+    std::string name_;
     // Commands (ros2_control => ODrives)
     double pos_setpoint_ = 0.0f; // [rad]
     double vel_setpoint_ = 0.0f; // [rad/s]
@@ -119,7 +121,7 @@ CallbackReturn ODriveHardwareInterface::on_init(const hardware_interface::Hardwa
     can_intf_name_ = info_.hardware_parameters["can"];
 
     for (auto& joint : info_.joints) {
-        axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")));
+        axes_.emplace_back(&can_intf_, std::stoi(joint.parameters.at("node_id")),std::stoi(joint.parameters.at("transmission")),joint.name);
       
     }
 
@@ -356,8 +358,18 @@ void Axis::on_can_msg(const rclcpp::Time&, const can_frame& frame) {
     switch (cmd) {
         case Get_Encoder_Estimates_msg_t::cmd_id: {
             if (Get_Encoder_Estimates_msg_t msg; try_decode(msg)) {
-                pos_estimate_ = msg.Pos_Estimate * (2 * M_PI);
-                vel_estimate_ = msg.Vel_Estimate * (2 * M_PI);
+                double pos = msg.Pos_Estimate * (2 * M_PI);
+                double vel = msg.Vel_Estimate * (2 * M_PI);
+
+                // Invert for front right and back right
+                if (name_ == "wheel_joint_fr" || name_ == "wheel_joint_br") {
+                    pos *= -1.0;
+                    vel *= -1.0;
+                }
+
+                pos_estimate_ = pos;
+                vel_estimate_ = vel;
+
             }
         } break;
         case Get_Torques_msg_t::cmd_id: {

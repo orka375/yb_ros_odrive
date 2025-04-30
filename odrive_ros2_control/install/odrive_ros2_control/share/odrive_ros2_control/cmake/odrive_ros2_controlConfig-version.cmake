@@ -1,1 +1,1 @@
-/home/nbf2/ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig-version.cmake
+/home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig-version.cmake

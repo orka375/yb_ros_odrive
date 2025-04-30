@@ -1,0 +1,27 @@
+In file included from [01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:3[m[K:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:117:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  117 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:120:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  120 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kencode_buf[m[K(uint8_t*) const[m[K’:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:872:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  872 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::[01;32m[Kdecode_buf[m[K(const uint8_t*)[m[K’:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:875:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  875 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:[m[K In constructor ‘[01m[Kodrive_ros2_control::Axis::[01;32m[KAxis[m[K(SocketCanIntf*, uint32_t, int32_t, std::string)[m[K’:
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:69:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kodrive_ros2_control::Axis::transmission_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   69 |     double [01;35m[Ktransmission_[m[K = 0.0f;
+      |            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:63:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::string odrive_ros2_control::Axis::name_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   63 |     std::string [01;35m[Kname_[m[K;
+      |                 [01;35m[K^~~~~[m[K
+[01m[K/home/nbf2/yb_ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:53:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   53 |     [01;35m[KAxis[m[K(SocketCanIntf* can_intf, uint32_t node_id, int32_t transmission, std::string name)
+      |     [01;35m[K^~~~[m[K
