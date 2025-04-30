@@ -284,6 +284,12 @@ return_type ODriveHardwareInterface::write(const rclcpp::Time&, const rclcpp::Du
             Set_Input_Vel_msg_t msg;
             msg.Input_Vel = axis.vel_setpoint_ / (2 * M_PI) * axis.transmission_;
             msg.Input_Torque_FF = axis.torque_input_enabled_ ? axis.torque_setpoint_ / axis.transmission_ : 0.0f;
+
+            if (axis.name_ == "wheel_joint_fr" || axis.name_ == "wheel_joint_br") {
+                msg.Input_Vel *= -1.0;
+                msg.Input_Torque_FF *= -1.0;
+            }
+
             axis.send(msg);
         } else if (axis.torque_input_enabled_) {
             Set_Input_Torque_msg_t msg;
