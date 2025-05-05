@@ -1,1 +1,1 @@
-/home/nbf2/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.zsh
+/home/fabian/yb_ros_odrive/odrive_ros2_control/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.zsh
