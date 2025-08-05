@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/nbf2/ros_odrive/odrive_botwheel_explorer" FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/odrive_botwheel_explorer/environment")

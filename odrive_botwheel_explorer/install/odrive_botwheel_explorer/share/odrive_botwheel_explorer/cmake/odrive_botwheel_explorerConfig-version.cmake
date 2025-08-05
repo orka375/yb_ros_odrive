@@ -1,1 +1,0 @@
-/home/nbf2/ros_odrive/odrive_botwheel_explorer/build/odrive_botwheel_explorer/ament_cmake_core/odrive_botwheel_explorerConfig-version.cmake
